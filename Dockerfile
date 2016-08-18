@@ -12,5 +12,5 @@ ENV GLUSTER_VOL ranchervol
 ENV GLUSTER_VOL_PATH /var/www
 ENV GLUSTER_HOST storage
 
-ADD cmd.sh
+ADD cmd.sh cmd.sh
 CMD "cmd.sh"
