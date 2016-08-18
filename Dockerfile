@@ -14,9 +14,8 @@ ENV GLUSTER_HOST storage
 
 WORKDIR ${GLUSTER_VOL_PATH}
 
-RUN mkdir ${GLUSTER_VOL_PATH}
 RUN mount -t glusterfs ${GLUSTER_HOST}:/${GLUSTER_VOL} ${GLUSTER_VOL_PATH}
 
 RUN chown -Rf www-data:www-data ${GLUSTER_VOL_PATH}
 
-CMD "nginx -g 'daemon off"
+CMD "nginx -g 'daemon off'"
